@@ -10,6 +10,7 @@ const App = () => {
   ]);
   const [inputValue, setInputValue] = useState('');
   const [loading, setLoading] = useState(false);
+  const [popupVisible, setPopupVisible] = useState(false);
   const messagesEndRef = useRef(null);
 
   const handleSendMessage = async (event) => {
@@ -75,6 +76,9 @@ const App = () => {
         setLoading(false);
         console.error(e);
       }
+    } else {
+      setLoading(false);
+      setPopupVisible(true);
     }
   };
   useEffect(() => {
@@ -97,6 +101,21 @@ scrollToBottom();
 
 return (
 <div className="min-h-screen flex items-center justify-center bg-gray-900">
+  {popupVisible && (
+    <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50">
+      <div className="bg-gray-800 p-6 rounded-lg">
+        <p className="text-white mb-4">
+          It looks like window.ai is not available. Please make sure you have visited windowai.io and correctly configured the extension.
+        </p>
+        <button
+          onClick={() => setPopupVisible(false)}
+          className="bg-blue-400 text-black px-4 py-2 rounded-lg text-sm font-semibold"
+        >
+          Close
+        </button>
+      </div>
+    </div>
+  )}
   <div className="w-full sm:w-3/4 lg:w-1/2 xl:w-1/2 bg-gray-800 shadow-lg rounded-lg p-6">
     <h1 className="text-3xl font-bold text-blue-400">Time Traveler</h1>
     <img src={"https://media.istockphoto.com/id/1129640969/photo/time-traveler-holds-a-clock-and-stands-in-front-of-a-portal-ready-get-teleported-to-another.jpg?s=612x612&w=0&k=20&c=4_ZQaFNSOT4Ob4FjDe9J4xvBNhjeXWICIsgLTxz9VkA="} alt="Time Traveler" className="w-48 mx-auto mb-4" />
