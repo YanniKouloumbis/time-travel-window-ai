@@ -18,13 +18,13 @@ To get started with this app, follow these steps:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/nextjs-window-ai.git
+git clone https://github.com/YanniKouloumbis/next-js-window-ai/
 ```
 
 2. Change directory to the project folder:
 
 ```bash
-cd nextjs-window-ai
+cd next-js-window-ai
 ```
 
 3. Install the required dependencies:
@@ -50,7 +50,7 @@ npm run dev
 
 ## Customization
 
-You can customize the app by modifying the `src/App.js` file. Here are some ideas for customization:
+You can customize the app by modifying the `pages/index.js` file. Here are some ideas for customization:
 
 - Change the initial system message to set a different context for the AI assistant.
 - Adjust the streaming options like `temperature` and `maxTokens` to control the AI's response.
@@ -62,7 +62,7 @@ Feel free to contribute to this project by submitting a pull request, reporting 
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. Use it for anything!
 
 ## Acknowledgments
 
