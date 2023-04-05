@@ -1,15 +1,16 @@
 # Next JS x window.ai
 
-This is a simple Next JS application that demonstrates how to integrate `window.ai` to build a chatbot interface. The app provides a user-friendly chat interface for users to communicate with an AI assistant.
+This is a simple Next JS application that demonstrates how to integrate [window.ai](windowai.io) to build a chatbot interface. The app provides a user-friendly chat interface for users to communicate with an AI assistant.
 
 ## Features
 
 - User-friendly chat interface
-- AI assistant powered by `window.ai`
+- AI assistant powered by [window.ai](windowai.io)
 - Automatically scrolls to the most recent message
 - Loading state while waiting for the AI to respond
 - Responsive design
 
+Built by [Yanni](https://twitter.com/YKouloumbis) & [Nolan](https://twitter.com/nolangclement).
 ## Installation
 
 To get started with this app, follow these steps:
