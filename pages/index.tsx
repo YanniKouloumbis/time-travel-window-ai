@@ -111,7 +111,7 @@ const App = () => {
                 <span
                   className={`inline-block p-2 rounded-lg text-left ${
                     message.role === 'user'
-                      ? 'bg-gray-800 text-green-400'
+                      ? 'bg-gray-800 text-green-300'
                       : 'bg-gray-800 text-green-400'
                   }`}
                 >
