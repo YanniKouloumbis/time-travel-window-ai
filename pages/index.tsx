@@ -105,7 +105,7 @@ return (
     <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50">
       <div className="bg-gray-800 p-6 rounded-lg">
         <p className="text-white mb-4">
-          It looks like window.ai is not available. Please make sure you have visited windowai.io and correctly configured the extension.
+          It looks like window.ai is not available. Please make sure you have visited <a>windowai.io</a> and correctly configured the extension.
         </p>
         <button
           onClick={() => setPopupVisible(false)}
